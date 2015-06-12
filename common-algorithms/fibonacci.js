@@ -1,30 +1,45 @@
 //How do get nth Fibonacci number?
 
-function fibo(num) {
-  if (num <= 1) {
-    return n;
+
+// 1, 1, 2, 3, 5, 8, 13, 21, 34, 55
+//using loop
+function fibonacci(num) {
+  var sum = 1;
+  var first = 0;
+  var second = 1;
+  if (num === 1 || num === 2) {
+    return 1;
+  } else {
+    for (var i = 1; i < num; i++) {
+      sum = first + second;
+      first = second;
+      second = sum;
+    }
   }
-  var result = fibo(n-1) + fibo(n-2);
+  return sum;
+}
+
+function assert(condition, desc) {
+  var result = condition ? "pass" : "fail";
+  console.log(result + " : " + desc);
+}
+
+
+//using recrusive function
+
+function recursiveFibo(num) {
+  if (num <= 1) {
+    return num;
+  }
+  var result = recursiveFibo(num-1) + recursiveFibo(num-2);
   return result;
 }
 
-
-function fibonacci(num) {
-  var result = 1;
-  var first = 0;
-  var second = 1;
-
-  while (var i = 1; i < num; i++) {
-    result = first + second;
-    first = second;
-    second = result;
-    i++;
-  }
-}
-
-  for (var i = 2; i < num.length; i++) {
-    fibo[i] = fibo[i-1] + fibo[i-2];
-    return fibo[i];
-  }
-
-}
+var test1 = fibonacci(8);
+var test2 = fibonacci(20);
+var test3 = recursiveFibo(5);
+var test4 = recursiveFibo(15);
+assert(test1 === 21, "testing loop function for finding nth fibonacci number");
+assert(test2 === 6765, "testing loop function for finding nth fibonnacci number");
+assert(test3 === 5, "testing recursive function for finding nth fibonacci number");
+assert(test4 === 610, "testing recursive function for finding nth fibonacci number");

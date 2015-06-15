@@ -13,10 +13,10 @@ function findDuplicate(arr) {
 
 function assert(condition, desc) {
   var result = condition ? "pass" : "fail";
-  console.log(result + ': ' +  desc);
+  console.log(result + ' : ' +  desc);
 }
 
 var resultPass = findDuplicate([1,2,3,4,5,5]);
 var resultFail = findDuplicate([1,2,3,3,4,5]);
-assert(result == 5, 'Checking findDuplicate function');
-assert(result == 4, 'Checking findDuplicate function');
+assert(resultPass == 5, 'Checking findDuplicate function');
+assert(resultFail == 4, 'Checking findDuplicate function');

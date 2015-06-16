@@ -6,7 +6,7 @@ function countZeros(n) {
   while (i <= n) {
     var arr = i.toString().split("");
     for (var j = 0; j < arr.length; j++) {
-      if (arr[j] == 0) {
+      if (arr[j] === 0) {
         zeroArray.push(arr[j]);
       }
     }

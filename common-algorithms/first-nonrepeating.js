@@ -24,5 +24,5 @@ function assert(condition, desc) {
 
 var testPass = findFirstUnique("AbcBa");
 var testFail = findFirstUnique("abcdefabcdf");
-assert(testResult == "c", 'Checking findFirstUnique function');
-assert(testResult == "a", 'Checking findFirstUnique function');
+assert(testResult == "c", 'should find first unique character in a string');
+assert(testResult == "a", 'should find first unique character in a string');

@@ -37,5 +37,5 @@ function compareArrays(a1, a2) {
 
 var test1 = findPrimeFactors(35);
 var test2 = findPrimeFactors(120);
-assert(compareArrays(test1, [5,7]), "checking prime factors of a number");
-assert(compareArrays(test2, [2,2,2,3,5]), "checking prime factors of a number");
+assert(compareArrays(test1, [5,7]), "should return all prime factors");
+assert(compareArrays(test2, [2,2,2,3,5]), "should return all prime factors");

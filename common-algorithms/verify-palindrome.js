@@ -23,5 +23,5 @@ function assert(cond, desc) {
 var test1 = checkPalindrome("aibohphobia");
 var test2 = checkPalindrome("hello");
 
-assert(test1, "word is a palindrome");
-assert(test2, "word is a palindrome");
+assert(test1, "should verify if word is a palindrome");
+assert(test2, "should verify if word is a palindrome");

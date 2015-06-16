@@ -17,5 +17,5 @@ function assert(condition, desc) {
 
 var test1 = reverseString("does this work?");
 var test2 = reverseString("vienne");
-assert(test1 == "?krow siht seod", "checking reverseString function");
-assert(test2 == "ennei", "checking reverseString function");
+assert(test1 == "?krow siht seod", "should reverse string input");
+assert(test2 == "ennei", "should reverse string input");

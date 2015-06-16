@@ -24,5 +24,5 @@ function assert(condition, desc) {
 
 var test1 = commonDivisor(10, 15);
 var test2 = commonDivisor(11, 13);
-assert(test1 == 5, "testing commonDivisor for two numbers");
-assert(test2 == 1, "testing commonDivisor for two numbers");
+assert(test1 == 5, "should find greatest commonDivisor for two numbers");
+assert(test2 == 1, "should find greatest commonDivisor for two numbers");

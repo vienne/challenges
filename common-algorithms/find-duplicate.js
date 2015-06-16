@@ -18,5 +18,5 @@ function assert(condition, desc) {
 
 var resultPass = findDuplicate([1,2,3,4,5,5]);
 var resultFail = findDuplicate([1,2,3,3,4,5]);
-assert(resultPass == 5, 'Checking findDuplicate function');
-assert(resultFail == 4, 'Checking findDuplicate function');
+assert(resultPass == 5, 'should find duplicate integer in array');
+assert(resultFail == 4, 'should find duplicate integer in array');

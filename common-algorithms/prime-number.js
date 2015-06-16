@@ -21,5 +21,5 @@ function assert(condition, desc) {
 
 var positive = checkPrime([23]);
 var negative = checkPrime([12]);
-assert(positive === true, "number is prime");
-assert(negative === false, "number is prime");
+assert(positive === true, "should verify if number is prime");
+assert(negative === false, "should verify if number is prime");

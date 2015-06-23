@@ -1,35 +1,36 @@
 //merge two sorted arrays
 
-
+//longwinded version
 function mergeArrays(arr1, arr2) {
   var combinedArray = [];
-  var num, num2;
+  var num1, num2;
 
   while(arr1.length && arr2.length){
       if (arr1[0] < arr2[0]) {
         num = arr1.shift();
-        combinedArray.push(num);
+        combinedArray.push(num1);
       } else if (arr2[0] < arr1[0]) {
         num = arr2.shift();
         combinedArray.push(num);
       } else if (arr1[0] == arr2[0]) {
-        num = arr1.shift();
+        num1 = arr1.shift();
         num2 = arr2.shift();
-        combinedArray.push(num);
+        combinedArray.push(num1);
         combinedArray.push(num2);
       }
   }
       while (arr1.length) {
-        num = arr1.shift();
-        combinedArray.push(num);
+        num1 = arr1.shift();
+        combinedArray.push(num1);
       }
       while (arr2.length) {
-        num = arr2.shift();
-        combinedArray.push(num);
+        num1 = arr2.shift();
+        combinedArray.push(num1);
       }
 
   return combinedArray;
 }
+
 
 function compareArrays(a1, a2) {
   if (a1.length != a2.length) {
